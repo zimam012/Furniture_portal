@@ -1,0 +1,98 @@
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Table header styling */
+thead th {
+    background-color: #4f4e4e;
+    color: #fff;
+    padding: 12px 15px;
+    text-transform: uppercase;
+}
+
+/* Table body styling */
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row coloring */
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the action buttons */
+tbody td a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+tbody td a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style for forms with the AForm class */
+.AForm {
+    background-color: white;
+    padding: 15px; /* Reduce padding for a smaller form height */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adjust as needed */
+    width: 100%;
+    margin: 20px auto; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 500px; /* Set a maximum height for the form */
+    overflow: auto; /* Add scroll if content overflows */
+}
+
+.AForm label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+.AForm input[type="text"],
+.AForm input[type="number"],
+.AForm input[type="email"],
+.AForm input[type="password"] {
+    width: 100%; /* Make all inputs the same width */
+    max-width: 400px; /* Optional: Adjust to fit your layout */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.AForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Optional: Make button the same width as inputs */
+    max-width: 400px; /* Optional: Adjust to fit your layout */
+}
+
+.AForm button:hover {
+    background-color: #45a049;
+}
+
+
+
+

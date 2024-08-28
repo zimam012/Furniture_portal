@@ -1,0 +1,308 @@
+/* Existing CSS styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #000; /* Change header background color to black */
+    padding: 10px 20px; /* Padding around the header */
+}
+
+.header-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 24px; /* Font size for the logo */
+    margin: 0; /* Remove default margin */
+    color: #fff; /* Change logo text color to white for better contrast */
+}
+
+
+.nav ul {
+    list-style: none; /* Remove bullet points from list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a row */
+}
+
+.nav li {
+    margin-left: 20px; /* Space between navigation items */
+}
+
+.nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Change link color to white for better contrast */
+    font-size: 18px; /* Font size for links */
+}
+
+.nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #8b4513, #d2b48c); /* Gradient from brown to tan */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0 0 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero .btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #ff4500; /* Darker shade of tomato */
+}
+
+/* Categories and Products Sections */
+.categories, .products {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.category-grid, .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item, .product-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item:hover, .product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img, .product-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 10px;
+}
+
+.category-item h3, .product-item h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 20px;
+    color: #666;
+}
+
+.product-item .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-item .btn:hover {
+    background-color: #ff4500; /* Darker shade of tomato */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* General styles for the contact page */
+.contact {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact .btn {
+    display: inline-block;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background-color: #ff4500; /* Darker shade of tomato */
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .contact form {
+        padding: 15px;
+    }
+}
+
+/* Style for the category section */
+.category-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Ensure the image does not overflow the box */
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 10px;
+}
+
+.category-item h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+

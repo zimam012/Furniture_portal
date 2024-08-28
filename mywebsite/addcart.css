@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ececec; /* Light grey background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.product-item {
+    background-color: #fff; /* White background for product items */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden; /* Ensures the border radius works properly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    text-align: center;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    padding: 15px;
+}
+
+.product-item p {
+    margin: 0;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+.product-item button {
+    background-color: #28a745; /* Green background */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.product-item button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+/* Styling for the Buy Now button */
+form[action="add_to_cart.php"] button {
+    background-color: #FF6347; /* Tomato color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form[action="add_to_cart.php"] button:hover {
+    background-color: #FF4500; /* Darker shade of tomato */
+    transform: scale(1.05);
+}
+
+form[action="add_to_cart.php"] button:active {
+    background-color: #FF6347;
+    transform: scale(1);
+}
+
+/* Ensure button is aligned to the right */
+form[action="add_to_cart.php"] {
+    text-align: right;
+    margin-bottom: 20px;
+}
